@@ -1,0 +1,14 @@
+<body>
+    <h1>Student Details</h1>
+    <ul>
+    <% studentdetails.forEach(function(student) { %>
+        <li>
+            <%= student.student %>
+            -
+        <%= student.id %>
+            - 
+        <%= student.id === 3 ? 'done' : 'not done' %>
+        </li>
+    <% }); %>
+    </ul>
+</body>
