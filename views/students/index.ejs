@@ -1,13 +1,20 @@
+<style>
+    body{
+        background-color:darkkhaki;
+    }
+    h1{
+        color:red;
+    }
+</style>
+
 <body>
+
     <h1>Student Details</h1>
     <ul>
     <% studentdetails.forEach(function(student) { %>
         <li>
-            <%= student.student %>
-            -
-        <%= student.id %>
-            - 
-        <%= student.id === 3 ? 'done' : 'not done' %>
+            
+        <%= student.id ? student.id + "-" + student.student: 'not done' %>
         </li>
     <% }); %>
     </ul>
